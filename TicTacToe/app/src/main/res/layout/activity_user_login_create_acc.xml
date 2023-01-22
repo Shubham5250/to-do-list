@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userLoginCreate_acc">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="277dp"
+        android:layout_height="355dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tictactoeTextView"
+        app:srcCompat="@drawable/userlogincreateacclogo" />
+
+    <Button
+        android:id="@+id/createAcc"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="39dp"
+        android:backgroundTint="#0A86CB"
+        android:text="Create an account"
+        android:onClick="createaccount"
+        app:cornerRadius="@android:dimen/thumbnail_width"
+        app:layout_constraintBottom_toTopOf="@+id/createAcc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/createAcc2"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="71dp"
+        android:backgroundTint="#DC1010"
+        android:text="Already have an account"
+        android:onClick="loginAcc"
+        app:cornerRadius="@android:dimen/thumbnail_width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAcc" />
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="118dp"
+        android:fontFamily="@font/baloo_paaji"
+        android:text="HELLO. Let's"
+        android:textColor="#0A86CB"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tictactoeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tictactoeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/baloo_paaji"
+        android:text="Tic - Tac - Toe"
+        android:textColor="#DC1010"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
