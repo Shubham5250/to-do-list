@@ -14,7 +14,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
-    private static int SPLASH_SCREEN = 3000;
+    private static int SPLASH_SCREEN = 3200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
