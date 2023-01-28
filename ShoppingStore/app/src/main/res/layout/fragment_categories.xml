@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_dashboard"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.011" />-->
+
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <include
+                    layout="@layout/mobiles"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include
+                    layout="@layout/fashion"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/groceries" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/music_gaming"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/appliances"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/personalcare"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/sports"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/toys"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/medical"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/books"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/furniture"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="122dp"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/more"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
